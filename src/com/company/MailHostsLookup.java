@@ -8,6 +8,8 @@ import java.util.Comparator;
 
 public class MailHostsLookup {
     public static void main(String args[]) {
+
+
         // explain what program does and how to use it
         if (args.length != 1) {
             System.err.println("Print out a sorted list of mail exchange servers ");
@@ -30,6 +32,7 @@ public class MailHostsLookup {
     // returns a String array of mail exchange servers (mail hosts)
     //     sorted from most preferred to least preferred
     static String[] lookupMailHosts(String domainName) throws NamingException {
+
         // see: RFC 974 - Mail routing and the domain system
         // see: RFC 1034 - Domain names - concepts and facilities
         // see: http://java.sun.com/j2se/1.5.0/docs/guide/jndi/jndi-dns.html
